@@ -4,81 +4,99 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600&family=Nova+Flat&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css">
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css"> -->
+        <script src="https://kit.fontawesome.com/c0a35d1901.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./style/style.css">
         <title>Foot Forward</title>
     </head>
     <body>
         <header>
-            <div class="wrapper">
+            <div class="wrapper clearfix">
                 <nav>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
-                </nav>
-                <div class="title">
-                    <h1>Foot Foward</h1>
+                </nav> 
+                <div  class="social-links">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    </ul>
                 </div>
-                <ul class="social-links">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-github"></i></a></li>
-                </ul>
+                
+                <h1>Foot Forward</h1>
+
             </div>
         </header>
-        <main>
-            <section id="" id="about" class="about" >
 
-            <div class="wrapper">
-                <ul>
-                    <li>
+        <main>
+            <section id="about" class="about clearfix" >
+                <div class="wrapper clearfix">
+                    <div class="about-box">
                         <div class="about-text-box">
-                        <h2>We specialize in: </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolorum! Quidem tenetur accusamus, atque perspiciatis, id, nihil ut natus quos facilis vel eligendi unde. Ex labore quo consectetur iure facere minima impedit nobis consequatur, animi quod dolore? Voluptatibus.</p>
-                        <a href="#">Read more</a>
+                            <h2>We specialize in: </h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolorum! Quidem tenetur accusamus, atque perspiciatis, id, nihil ut natus quos facilis vel eligendi unde.
+                            Ex labore quo consectetur iure facere minima impedit nobis consequatur, animi quod dolore?</p>
+                            <a class="btn" href="#">Read more</a>
                         </div>
-                    </li>
-                    <li><img src="./assets/image-2_2@2x.png" alt="Adidas Sneakers"></li>
-                    <li><img src="./assets/image-2-copy@2x.png" alt="Beige Sneaker"></li>
-                    <li>
+                    </div>
+                    <div class="about-box">
+                        <img src="./assets/image-2_2@2x.png" alt="Adidas Sneakers">
+                    </div>
+                    <div class="about-box">
+                        <img src="./assets/image-2-copy@2x.png" alt="Beige Sneaker">
+                    </div>
+                    <div class="about-box">
                         <div class="about-text-box">
-                        <h2>Foot care</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eaque ab inventore voluptas dignissimos aut. Dolore, error nobis, aliquid ut amet architecto eos consequatur id fugiat dolorem autem consequuntur impedit veritatis assumenda eveniet nihil esse est! Ipsum, quas?</p>
-                        <a href="#">Read more</a>
+                            <h2>Foot Care</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolorum! Quidem tenetur accusamus, atque
+                                perspiciatis, id, nihil ut natus quos facilis vel eligendi unde. Ex labore quo consectetur iure facere minima
+                                impedit nobis consequatur, animi quod dolore? </p>
+                            <a class="btn" href="#">Read more</a>
                         </div>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                </div>
             </section >
                 
-            <section id="moreInfo" >
-                <div class="wrapper">
+            <section id="blog" class="blog">
+                <div class="wrapper clearfix">
                     <figure><img src="./assets/image-6@2x.png" alt="Put sneakers on"></figure>
                     <div class="moreInfo">
                         <h2>Giving back</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis iusto soluta veritatis ratione quisquam.
-                            Commodi quos officia nihil sed saepe quaerat doloremque ducimus nemo error.<a href="">Read more</a></p>
+                            Commodi quos officia nihil sed saepe quaerat doloremque ducimus nemo error.</p>
+                        <a class="btn" href="">Read more</a>
                     </div>
                 </div>
             </section>
 
-            <section id="shopping" class="shopping">
-                <div class="network">
-                    <ul>
-                        <li><a href=""><i class=“fab fa-shopping-bag”></i></a></li>
-                        <li><a href=""><i class=“fas fa-users”></i></a></li>
-                        <li><a href=""><i class=“fas fa-phone”></i></a></li>
-                    </ul>
+            <section id="contact" class="contact">
+                <div class="wrapper clearfix">
+                    <div class="contact-box">
+                        <div class="products">
+                            <i class="fas fa-shopping-bag"></i>
+                            <p><a href="#">Products</a></p>
+                        </div>
+                        <div class="community">
+                            <i class="fas fa-users"></i>
+                            <p><a href="#">Community</a></p>
+                        </div>
+                        <div class="phone">
+                            <i class="fas fa-phone"></i>
+                            <p><a href="#">Contact</a></p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section id="gallery" class="gallery">
-                <div class="wrapper">
+                <div class="wrapper clearfix">
                     <h2>The gramm</h2>
                     <ul>
                         <li><img src="./assets/image-2@2x.png" alt=""></li>
@@ -88,8 +106,9 @@
                 </div>
             </section>
         </main>
+
         <footer>
-            <div class="wrapper">
+            <div class="wrapper clearfix">
                 <nav>
                     <ul>
                         <li><a href="">Home</a></li>

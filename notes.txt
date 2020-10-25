@@ -1,0 +1,34 @@
+How to place links on the right side of wrapper.
+float rigth doesn't work with absolute position,
+used absolute position to locate social-link verticaly 
+and in middle of wrapper element
+
+.social-links{
+    background-color: cadetblue;
+    text-align: center;
+    position: absolute; 
+    display: block;
+    width: 50px;      
+    top:50%;
+    transform: translateY(-50%);
+    margin-left: 1230px;calculated: wrapper length - (width of the social-links + margin+padding )
+    /*float:rigth*/
+}
+
+.title{
+    /* position: absolute; */
+    background-color: #F4F4F4;
+    opacity: 0.8;
+    width: 400px; 
+    height: 220px;
+    /* bottom: 8rem;
+    right: 30rem; */
+}
+
+
+.title h1{
+    background-color: lawngreen;
+    float: left;
+    
+    /* height: 220px; */
+}

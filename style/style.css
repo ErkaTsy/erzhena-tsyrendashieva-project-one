@@ -15,7 +15,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 }
 
 html{
-    font-size: 100%;
+    font-size: 62.5%;
 }
 
 body{
@@ -25,9 +25,14 @@ body{
     color: #186684;
 }
 
-h1{
-    font-size: 4.2rem;
-}
+/* h1{
+    margin: 0;
+    font-weight: 400;
+    font-size: 7rem; 
+    float: left;   
+    width: 400px;
+    height: 300px;
+} */
 
 h2{
     font-size: 3.2rem;
@@ -48,9 +53,9 @@ img{
 figure{
     margin: 0;
 }
-ul{
-    list-style: none;
 
+ul{
+    list-style: none;    
 }
 
 a{
@@ -61,34 +66,36 @@ a{
 .wrapper{
     max-width: 1280px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto;  
 }
 
-/* HEADER STYLE */
+/* HEADER style */
 header{
     background-image: url('/assets/image-1@2x.png');
-    min-height: 100vh;
+    min-height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0 auto; 
+    /* position: relative; */
 } 
 
 header nav{
-    /* float: left; */
-    display: inline-block;
     /* background-color: lawngreen; */
     margin: 0 auto;
-    /* font-size: 2rem; */    
+    text-align: center;  
 }
 
-header li{
+header nav li{
+    /* background-color: beige; */
     display: inline-block;
-    margin: 0;     
-    padding: 20px;   
+    margin: 0;   
 } 
 
-header a{
+header nav a{
     font-size: 2rem;
+    display: block;
     margin: 20px;   
 }
 
@@ -97,21 +104,144 @@ header a:focus{
     color:#E85B26;
 }
 
-.title{
-    position: absolute;
-    background-color: #F4F4F4;
-    opacity: 0.8;
-    width: 400px; 
-    height: 220px;
-    bottom: 8rem;
-    right: 30rem;
+.social-links{
+    /* background-color: cadetblue; */
+    text-align: center;    
+    float: right;
+    margin-top: 25vh;
 }
 
-.title h1{
-    /* font-size: 5.5rem; */
-    background-color: lawngreen;
-    width: 90%;
-    height: 220px;
-    
-    /* line-height: 1.9rem; */
+.social-links li{
+    font-size: 1.5rem;    
+    margin: 5px;
+    padding: 5px;     
+}
+
+h1{
+    background-color: #F4F4F4;
+    opacity: 0.9;
+    position: absolute;
+    display: inline-block;    
+    padding:20px;
+    font-weight: 400;
+    font-size: 7.5rem; 
+    width: 480px;    
+    line-height: 6rem; 
+    top:55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+/* ABOUT style */
+
+.about{
+    background-color: #F4F4F4;
+    /* min-height: 500px; */
+    height: auto;
+}
+.about-box{
+    background-color: #E85B26;
+    float: left;
+    width: 50%;
+    height: 480px;
+}
+
+.about-text-box{
+    /* background-color: blueviolet; */
+    margin: 110px;    
+}
+
+.about-box h2{
+  padding: 10px 0;
+}
+.about-box p {
+  padding: 5px 0 20px;   
+}
+
+.btn{    
+    font-size: 1.8rem;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: 3px solid #E85B26;
+}
+
+.btn:hover,
+.btn:focus{
+    color:#E85B26;
+}
+
+/* BLOG style */
+.blog{
+    background-color: #F4F4F4;
+}
+
+.blog figure,
+.moreInfo{
+    float: left;
+}
+
+.blog figure{
+    margin: 60px 0;
+    width: 30%;
+}
+
+.moreInfo{
+    width: 70%;
+    margin: 60px 0 0 30px;
+    width: calc(70% - 30px);
+}
+
+.moreInfo h2,
+.moreInfo p{
+    margin-bottom: 30px;
+}
+
+/* CONTACT style */
+.contact{
+    background-image: url("/assets/image-5@2x.png");
+    min-height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto; 
+    position: relative;
+}
+
+.contact-box{
+    background-color: #F4F4F4;
+    width: 40%;
+    height: 200px;
+    display: inline-block;  
+    position: absolute; 
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.contact-box>div{
+    width: calc(100% / 3);
+    float: left;    
+    padding-top: 50px;
+}
+
+.contact-box p{
+    padding-top: 20px;
+}
+
+.fa-shopping-bag,
+.fa-users,
+.fa-phone{
+    color: #E85B26;
+    font-size: 40px;
+}
+
+/* GALLERY style */
+.gallery h2{
+    text-align: center;
+}
+
+.gallery li{
+    float: left;
+    width: calc(100% / 3);
 }
