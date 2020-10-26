@@ -4,22 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600&family=Nova+Flat&display=swap" rel="stylesheet">
-        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css"> -->
         <script src="https://kit.fontawesome.com/c0a35d1901.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./style/style.css">
         <title>Foot Forward</title>
     </head>
     <body>
         <header>
-            <div class="wrapper clearfix">
-                <nav>
-                    <ul>
+            <div class="wrapper clearfix">                
+                <nav>  
+                    <input type="checkbox" class="toggle-menu">
+                    <div class="hamburger"></div>
+                    <ul class="menu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#blog">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
+                                       
                 </nav> 
                 <div  class="social-links">
                     <ul>
@@ -28,36 +29,46 @@
                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fab fa-github"></i></a></li>
                     </ul>
-                </div>
-                
+                </div>                
                 <h1>Foot Forward</h1>
-
             </div>
         </header>
 
         <main>
-            <section id="about" class="about" >
-                <div class="wrapper clearfix">
-                    <div class="about-box">                       
+            <section id="about" class="about">
+                <div class="clearfix">
+                    <div class="wrapper">
+                        <div class="about-box">
                             <h2>We specialize in: </h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolorum! Quidem tenetur accusamus, atque perspiciatis, id, nihil ut natus quos facilis vel eligendi unde.
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolorum! Quidem tenetur accusamus,
+                            atque perspiciatis, id, nihil ut natus quos facilis vel eligendi unde.
                             Ex labore quo consectetur iure facere minima impedit nobis consequatur, animi quod dolore?</p>
-                            <a class="btn" href="#">Read more</a>
-                       
+                            <a class="btn" href="#">Read more</a>                    
+                        </div>
                     </div>
-                </div>
-            </section >
-            <section id="aboutMore" class="aboutMore">
-                <div class="wrapper clearfix">                              
-                    <div class="about-box">
-                            <h2>Foot Care</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolorum! Quidem tenetur accusamus, atque
-                            perspiciatis, id, nihil ut natus quos facilis vel eligendi unde. Ex labore quo consectetur iure facere minima
-                            impedit nobis consequatur, animi quod dolore? </p>
-                            <a class="btn" href="#">Read more</a>
+                    <div class="image">
+                        <img src="assets/image-2_2@2x.png" alt="Sneakers">
                     </div>
                 </div>
             </section>
+
+            <section id="aboutMore" class="aboutMore">
+                <div class="clearfix">
+                    <div class="image">
+                        <img src="assets/image-2-copy@2x.png" alt="Sneaker in the hand">
+                    </div>
+                    <div class="wrapper">
+                        <div class="about-box">
+                            <h2>Foot Care</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolorum! Quidem tenetur accusamus,
+                                atque perspiciatis, id, nihil ut natus quos facilis vel eligendi unde.
+                                Ex labore quo consectetur iure facere minima impedit nobis consequatur, animi quod dolore?</p>
+                            <a class="btn" href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
                 
             <section id="blog" class="blog">
                 <div class="wrapper clearfix">
@@ -93,9 +104,9 @@
                 <div class="wrapper clearfix">
                     <h2>The gramm</h2>
                     <ul>
-                        <li><img src="./assets/image-2@2x.png" alt=""></li>
-                        <li><img src="./assets/image-3@2x.png" alt=""></li>
-                        <li><img src="./assets/image-4@2x.png" alt=""></li>
+                        <li><img src="./assets/image-2@2x.png" alt="Black&White Sneaker"></li>
+                        <li><img src="./assets/image-3@2x.png" alt="Gumshoes"></li>
+                        <li><img src="./assets/image-4@2x.png" alt="White Sneaker"></li>
                     </ul>
                 </div>
             </section>
@@ -132,8 +143,3 @@
     </body>
 
 </html>
-
-
-<!-- <a href=“#”><i class=“fas fa-shopping-bag”></i>Products</a>
-<a href=“#”><i class=“fas fa-users”></i>Community</a>
-<a href=“#”><i class=“fas fa-phone”></i>Reach out</a> -->
