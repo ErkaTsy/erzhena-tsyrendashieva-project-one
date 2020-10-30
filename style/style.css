@@ -198,22 +198,30 @@ header nav input:checked ~ .hamburger:after{
 
 /* ABOUT/ABOUTMORE style */
 .about, .aboutMore{
-    background-color: #F4F4F4;    
+    background-color: #F4F4F4;     
 }
 
-.about-box, .image{
+.about-box, figure{
     float: left;
-    width: 50%;
-    
+    width: 50%;      
 } 
 
-.image img{
+figure img{
     object-fit: cover;
     min-height: 550px; 
 }
 
 .about-box{
-    padding: 3rem;
+    min-height: 550px;
+    max-height: 850px; 
+    position: relative;
+    padding: 0 3rem;
+}
+
+.about-text-box{
+    position: absolute;     
+    top: 50%;
+    transform: translate(0,-50% );
 }
 
 .about h2,
@@ -222,12 +230,11 @@ header nav input:checked ~ .hamburger:after{
 }
 
 .about p {
-  padding: 2rem 8rem 4rem 0; 
-  
+  padding: 2rem 5rem 4rem 0;   
 }
 
 .aboutMore p{
-  padding: 2rem 0 4rem;
+  padding: 2rem 5rem 2rem 0;
 }
 
 .aboutMore .about-box{
@@ -261,16 +268,19 @@ header nav input:checked ~ .hamburger:after{
 }
 
 .blog figure{
-    margin: 30px 0;
-    width: 30%;
+    margin: 30px 0;    
     padding-left: 3rem;
+    width: calc(45% - 3rem);
+  
 }
 
+
+
 .moreInfo{
-    width: 70%;
+    width: 60%;
     margin: 30px 0 0 30px;
     padding-right: 3rem;
-    width: calc(70% - 60px);
+    width: calc(55% - 60px);
 }
 
 .moreInfo h2,
@@ -281,7 +291,7 @@ header nav input:checked ~ .hamburger:after{
 /* CONTACT style */
 .contact{
     background-image: url("/assets/image-5@2x.png");
-    min-height: 50vh;
+    min-height: 85vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -399,7 +409,8 @@ address{
 
 input[type=text], input[type=submit] {
     padding:12px;
-    margin: 0;    
+    margin: 0; 
+    font-size: 20px;   
 } 
 
 input[type=text]{
@@ -446,29 +457,6 @@ header{
 .aboutMore .about-box{
     padding-left: 4rem;
 }
-} 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-    /* ABOUT/ABOUTMORE style */
-.about, .aboutMore{
-    text-align: center;    
-}
-.about-box, .image{
-    float: left;
-    width: 100%;
-    
-} 
-
-.about .about-box{
-    margin-top: 550px;
-    
-} 
-
-.about .image{
-    height: 550px;
-    margin-left: -100%;
-}
 
 /* BLOG style */
 .blog{
@@ -484,22 +472,68 @@ header{
     width: 100%;
     margin: 30px 0;
     padding: 3rem;    
+     
 }
 
 .moreInfo p{
     text-align: left;
 }
 
-/* CONTACT style */
-.contact{
-    max-height: 70svh;
-    height: 70vh;
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+/* ABOUT/ABOUTMORE style */
+.about, .aboutMore{
+    text-align: center;    
 }
+.about-box, figure{
+    float: left;
+    width: 100%;
+} 
+
+.about .about-box{
+    margin-top: 550px;    
+} 
+
+.about figure{
+    height: 550px;
+    /* max-height: 200px;
+    overflow: hidden; */
+    margin-left: -100%;
+}
+
+.about-text-box{
+    margin-right: 3rem ;
+}
+
+.aboutMore .about-text-box{
+    margin-left: 3rem ;
+}
+
+.about h2,
+.aboutMore h2{
+  padding: 2rem 0;
+}
+
+.about p {
+  padding: 2rem  0;   
+}
+
+.aboutMore p{
+  padding: 2rem  0;
+}
+
+.aboutMore .about-box{
+    padding-left: 0rem;
+}
+
+/* CONTACT style */
 .contact-box{
     margin: 0;    
-    width: 50%;
+    width: 40%;
     padding: 20px;
-    height: calc(100% - 40px);
+    height: auto;
     display: block;  
 }
 
@@ -552,7 +586,6 @@ input[type=submit] {
 }
 } 
 
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
   .hamburger,
@@ -560,25 +593,12 @@ input[type=submit] {
     display: block;
 }
 
-.menu{   
-    position: absolute;
-    background-color: #F4F4F4 ;
-    width: 100%;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    list-style-type: none;
-    transform: translate(-100%, 0);
-}
- .menu li{
-     display: block;
-     padding: 10px 0;
- }
-
 header nav input:checked ~ ul
 {
   transform: none;  
-}.hamburger,
+}
+
+.hamburger,
 .toggle-menu{
     display: block;
 }
@@ -587,12 +607,11 @@ header nav input:checked ~ ul
     position: absolute;
     background-color: #F4F4F4 ;
     width: 100%;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
+    padding: 40px;
     list-style-type: none;
     transform: translate(-100%, 0);
 }
+
  .menu li{
      display: block;
      padding: 10px 0;
@@ -619,6 +638,7 @@ header nav input:checked ~ ul
 .gallery li:nth-child(2){
     margin-right: 0;
 }
+
 .gallery li:nth-child(2){
     display: none;
 }
@@ -630,4 +650,22 @@ header nav input:checked ~ ul
     font-size: 7rem; 
     width: 330px;    
 }
+
+/* CONTACT style */
+.contact-box{        
+    width: 50%;      
+}
+
+.contact-box>div{
+    width: 100%;
+    float: left;    
+    padding: 10px;
+}
+
+
+footer a{
+    margin: 40px 10px;
+    font-size: 18px
+}
+
 }
