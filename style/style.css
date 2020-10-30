@@ -63,7 +63,7 @@ a{
 
 /* HEADER style */
 header{
-    background-image: url('/assets/image-1@2x.png');
+    background-image: url('./assets/image-1@2x.png');
     min-height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -290,7 +290,7 @@ figure img{
 
 /* CONTACT style */
 .contact{
-    background-image: url("/assets/image-5@2x.png");
+    background-image: url("./assets/image-5@2x.png");
     min-height: 85vh;
     background-size: cover;
     background-repeat: no-repeat;
